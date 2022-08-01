@@ -1,10 +1,14 @@
 @@cards @@row
 @@column
-  \card{Adriano Bellotti}{}{Ph.D. Student}{currently somewhere else}{}
+  \card{Adriano Bellotti}{}{Ph.D. Student}{currently somewhere else}{new email}
 @@
 
 @@column
-  \card{Adrianna R Loback}{}{}{currently...}{}
+  \card{Adrianna R Loback}{}{Research Associate}{currently...}{new email}
+@@
+
+@@column
+  \card{Saeed Aljaberi}{}{Ph.D. Student}{}{new email}
 @@
 
 @@ @@
