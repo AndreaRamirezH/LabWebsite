@@ -2,6 +2,24 @@
   {{ insert masthead.html }}
   <div class="initial-content">
     <div id="main" role="main">
+
+      {{ispage contact}}
       <div class="sidebar sticky">
+        <div itemscope itemtype="https://schema.org/Person">
+          <div class="author__avatar">
+            <img src="/assets/O'L.png" alt="Timothy O'Leary" itemprop="image">
+          </div>
+
+          <div class="author__urls-wrapper">
+            <button class="btn btn--inverse">Follow</button>
+            <ul class="author__urls social-icons">
+              <li><a href="https://twitter.com/timothy0leary" rel="nofollow noopener noreferrer"><i
+                    class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="https://github.com/olearylab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
+                    aria-hidden="true"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        {{end}}
 
       </div>

@@ -2,4 +2,5 @@
 title = "Resources"
 +++
 
-# Source code... posters/slides?
+# Lab Wiki
+How to add an entry

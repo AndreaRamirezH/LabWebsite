@@ -64,7 +64,7 @@ html {
   font-family: Arial, serif;
   color: #a6a2a0;
   text-align: center;
-  margin-top: 6em;
+  margin-top: 8em;
   border-top: 1px solid lightgrey;
   padding-top: 2em;
   margin-bottom: 4em;
@@ -155,7 +155,7 @@ h6 {
 }
 
 .franklin-toc ol ol {
-  list-style-type: lower-alpha;
+  list-style-type: lower-roman;
 }
 
 .franklin-content th,

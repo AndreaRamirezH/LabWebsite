@@ -4,30 +4,19 @@ hascode = true
 tags = ["contact"]
 +++
 
-# How to get in touch/find us/contact us
-We are a part of the Control Group within the Information Engineering Division of Cambridge University Engineering Department.
+# How to contact us
+We are a part of the Control Group within the Information Engineering Division of the Engineering Department at the University of Cambridge.
 
 ~~~
 <div class="row">
   <div class="container">
-    <div id="googleMap" style="width:100%;height:400px;"></div>
 
-    <script>
-    function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
-      zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    </script>
-
-    <script class="right" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  <iframe width="475" height="425" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=0.11652588844299318%2C52.19552081587518%2C0.12405753135681154%2C52.20039369228812&amp;layer=mapnik&amp;marker=52.19795732086128%2C0.12029170989990234" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=52.19796&amp;mlon=0.12029#map=17/52.19796/0.12029">View larger map</a></small>
 
     <p>
-    Control Group, <br>
-    Cambridge University Engineering Department, <br>
-    Trumpington Street, <br>
+    Control Group, Engineering Department<br>
+    University of Cambridge<br>
+    Trumpington Street <br>
     Cambridge. <br>
     CB2 1PZ<br>
     Phone : +44 1223 332711 or 332752
