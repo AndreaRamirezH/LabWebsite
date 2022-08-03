@@ -32,7 +32,19 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>wiki/subdir/page2/index.html</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>wiki/lab_wiki/index.html</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>wiki/subdir/page1/index.html</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
