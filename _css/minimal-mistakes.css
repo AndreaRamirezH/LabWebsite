@@ -4640,8 +4640,8 @@ a.reversefootnote:hover {
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  width: 70px;
+  height: 70px;
 }
 
 @media (min-width: 64em) {
@@ -4653,8 +4653,8 @@ a.reversefootnote:hover {
 }
 
 .author__avatar img {
-  max-width: 110px;
-  border-radius: 50%;
+  max-width: 200px;
+  border-radius: 25%;
 }
 
 @media (min-width: 64em) {

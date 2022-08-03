@@ -9,10 +9,15 @@ How do nervous systems adapt and repair themselves? How do they exhibit coherent
 ## Brain Machine Interfaces and Representational Drift
 
 
+
 ## Circuit architecture
 How does circuit architecture help shape ...?
 
-## Homeostatic regulation
+## (computational and engineering principles of neural circuit function)
+
+### Spiking networks
+
+### Homeostatic regulation
 
 It is well known that neurons have homeostatic mechanisms that control activity levels. But how does cell-level regulation affect network function? What are the limits to what homeostatic mechanisms can achieve?
 
