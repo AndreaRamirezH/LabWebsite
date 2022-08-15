@@ -1,9 +1,12 @@
 # This file was generated, do not modify it. # hide
 #hideall
 past_team = [
-  (name="Adriano Bellotti", pic="", title="Ph.D. Student", vitae="currently somewhere else", email="new email"),
-  (name="Adrianna R Loback", pic="", title="Research Associate", vitae="currently...", email="new email"),
-  (name="Saeed Aljaberi", pic="", title="Ph.D. Student", vitae="", email="new email")
+  (name="Saeed Aljaberi", pic="avatar.jpg", title="Ph.D. Student", vitae="", email=""),
+  (name="Adriano Bellotti", pic="avatar.jpg", title="Ph.D. Student", vitae="", email=""),
+  (name="Kristine Heiney", pic="Kristine.jpg", title="Ph.D. Student", vitae="", email="kh732@cam.ac.uk"),
+  (name="Dr. Monika Jozsa", pic="avatar.jpg", title="Research Associate", vitae="", email="mj555@cam.ac.uk"),
+  (name="Adrianna R Loback", pic="avatar.jpg", title="Research Associate", vitae="", email=""),
+  (name="Dr. Dhruva Raman", pic="avatar.jpg", title="Research Associate", vitae="",  email="dvr23@cam.ac.uk")
   ]
 
 "@@cards @@row" |> println
