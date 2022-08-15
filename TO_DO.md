@@ -17,15 +17,9 @@ Thomas
 
 Andrea
 
-- hfsp grant 
-
 - ask for pictures of current team members
 - research topics from everyone: ask for graphical abstract and/or key references 
 
-- side bar for contact page -> accronym or phrase?
-
 - last modified not working in main page footer
-
-- full publications -> link to Google Scholar
 
 - overview: change image of brain 

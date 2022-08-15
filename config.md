@@ -19,7 +19,9 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\R}{\mathbb R}
 \newcommand{\card}[5]{
   @@card
-    ![#1](/assets/img/team/!#2.jpg)
+    ~~~
+    <img src="/assets/members/!#2" alt="memberpicture" style="width:100%"/>
+    ~~~
     @@container
       ~~~
       <h2>#1</h2>

@@ -5129,7 +5129,9 @@ a.reversefootnote:hover {
 
 .card img {
   padding-left: 0;
-  width: 100%;
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
 }
 
 .container {
@@ -5176,6 +5178,6 @@ a.reversefootnote:hover {
   display: flex;
   flex-wrap: wrap;
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 10px;
 }

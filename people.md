@@ -11,18 +11,16 @@ tags = ["people"]
 ```julia:teamcards
 #hideall
 team = [
-  (name="Dr. Timothy O'Leary", pic="", title="Principal Investigator", vitae="", email="tso24@cam.ac.uk"),
-  (name="Dr. Thiago Burghi", pic="", title="Research Associate", vitae="", email="tbb29@cam.ac.uk"),
-  (name="Dr. Monika Jozsa", pic="", title="Research Associate", vitae="", email="mj555@cam.ac.uk"),
-  (name="Dr. Dhruva Raman", pic="", title="Research Associate", vitae="", email="dvr23@cam.ac.uk"),
-  (name="Dr. Michael Rule", pic="", title="Research Associate", vitae="", email="mer49@cam.ac.uk"),
-  (name="Thomas Burger", pic="", title="Ph.D. Student", vitae="", email="tsjb2@cam.ac.uk"),
-  (name="Charles Micou", pic="", title="Ph.D. Student", vitae="", email="cm704@cam.ac.uk"),
-  (name="Adriana Perez-Rotondo", pic="", title="Ph.D. Student", vitae="", email="ap2013@cam.ac.uk"),
-  (name="Andrea Ramirez-Hincapie", pic="", title="Ph.D. Student", vitae="", email="air28@cam.ac.uk"),
-  (name="Ethan Sorrell", pic="", title="Ph.D. Student", vitae="", email="ets30@cam.ac.uk"),
-  (name="Ildiko Stark", pic="", title="Ph.D. Student", vitae="", email="is425@cam.ac.uk"),
-  (name="Andrey Stoychev", pic="", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
+  (name="Dr. Timothy O'Leary", pic="avatar.jpg", title="Principal Investigator", vitae="", email="tso24@cam.ac.uk"),
+  (name="Dr. Thiago Burghi", pic="Thiago.jpg", title="Research Associate", vitae="", email="tbb29@cam.ac.uk"),
+  (name="Dr. Michael Rule", pic="avatar.jpg", title="Research Associate", vitae="", email="mer49@cam.ac.uk"),
+  (name="Thomas Burger", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="tsjb2@cam.ac.uk"),
+  (name="Charles Micou", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="cm704@cam.ac.uk"),
+  (name="Adriana Perez-Rotondo", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="ap2013@cam.ac.uk"),
+  (name="Andrea Ramirez-Hincapie", pic="Andrea.jpg", title="Ph.D. Student", vitae="", email="air28@cam.ac.uk"),
+  (name="Ethan Sorrell", pic="Ethan.jpg", title="Ph.D. Student", vitae="", email="ets30@cam.ac.uk"),
+  (name="Ildiko Stark", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="is425@cam.ac.uk"),
+  (name="Andrey Stoychev", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
   ]
 
 "@@cards @@row" |> println
@@ -44,9 +42,12 @@ println("@@ @@") # end of cards + row
 ```julia:teamcards
 #hideall
 past_team = [
-  (name="Adriano Bellotti", pic="", title="Ph.D. Student", vitae="currently somewhere else", email="new email"),
-  (name="Adrianna R Loback", pic="", title="Research Associate", vitae="currently...", email="new email"),
-  (name="Saeed Aljaberi", pic="", title="Ph.D. Student", vitae="", email="new email")
+  (name="Saeed Aljaberi", pic="avatar.jpg", title="Ph.D. Student", vitae="", email=""),
+  (name="Adriano Bellotti", pic="avatar.jpg", title="Ph.D. Student", vitae="", email=""),
+  (name="Kristine Heiney", pic="Kristine.jpg", title="Ph.D. Student", vitae="", email="kh732@cam.ac.uk"),
+  (name="Dr. Monika Jozsa", pic="avatar.jpg", title="Research Associate", vitae="", email="mj555@cam.ac.uk"),
+  (name="Adrianna R Loback", pic="avatar.jpg", title="Research Associate", vitae="", email=""),
+  (name="Dr. Dhruva Raman", pic="avatar.jpg", title="Research Associate", vitae="",  email="dvr23@cam.ac.uk")
   ]
 
 "@@cards @@row" |> println

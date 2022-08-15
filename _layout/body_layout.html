@@ -6,9 +6,6 @@
       {{ispage contact}}
       <div class="sidebar sticky">
         <div itemscope itemtype="https://schema.org/Person">
-          <div class="author__avatar">
-            <img src="/assets/minimal-mistakes/mm-free-feature.png" itemprop="image">
-          </div>
 
           <div class="author__urls-wrapper">
             <button class="btn btn--inverse">Follow</button>
@@ -20,6 +17,24 @@
             </ul>
           </div>
         </div>
+        {{end}}
+
+        {{ispage publications}}
+        <div class="sidebar sticky">
+          <div itemscope itemtype="https://schema.org/Person">
+            
+            <div class="author__content">
+              <h4 class="author__bio" itemprop="description">Full list of publications:</h4>
+            </div>
+
+            <div class="author__urls-wrapper">
+              <button class="btn btn--inverse">Follow</button>
+              <ul class="author__urls social-icons">
+                <li><a href="https://scholar.google.com/citations?user=CxaDsg8AAAAJ&hl=en&oi=ao" rel="nofollow noopener noreferrer">
+                  Google <br> Scholar</a></li>
+              </ul>
+            </div>
+          </div>
         {{end}}
 
       </div>
