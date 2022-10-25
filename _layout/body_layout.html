@@ -37,4 +37,14 @@
           </div>
         {{end}}
 
+        {{ispage wiki/*}}
+            <div class="sidebar sticky">
+                <div class="Thing">
+                    <h4 class="author__bio" itemprop="description">Posts:</h4>
+
+                    {{ navigation wiki/ }}
+                </div>
+            </div>
+        {{end}}
+
       </div>
