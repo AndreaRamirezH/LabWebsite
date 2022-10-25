@@ -17,9 +17,8 @@ Thomas
 
 Andrea
 
-- ask for pictures of current team members
 - research topics from everyone: ask for graphical abstract and/or key references 
 
 - last modified not working in main page footer
 
-- overview: change image of brain 
+- more images in research section?
