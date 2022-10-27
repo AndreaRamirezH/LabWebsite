@@ -67,9 +67,9 @@ function hfun_navigation(folders)
         lt = (x, y) -> x.stitle > y.stitle
         sort!(path_items; lt=lt, rev=true)
         print(io, """
-            <div class="posts-group">
-            <div class="post-folder">$(k)</div>
-            <ul class="posts-list">
+                <div class="posts-group">
+                <div class="post-folder">$(k)</div>
+                <ul class="posts-list">
             """)
         for item in path_items
             print(io, """
