@@ -20,7 +20,7 @@ team = [
   (name="Andrea Ramirez-Hincapie", pic="Andrea.jpg", title="Ph.D. Student", vitae="", email="air28@cam.ac.uk"),
   (name="Ethan Sorrell", pic="Ethan.jpg", title="Ph.D. Student", vitae="", email="ets30@cam.ac.uk"),
   (name="Ildiko Stark", pic="Ildiko.jpg", title="Ph.D. Student", vitae="", email="is425@cam.ac.uk"),
-  (name="Andrey Stoychev", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
+  (name="Andrey Stoychev", pic="Andy.jpg", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
   ]
 
 "@@cards @@row" |> println
