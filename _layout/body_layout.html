@@ -3,7 +3,6 @@
   <div class="initial-content">
     <div id="main" role="main">
 
-
       {{ispage research}}
         <div class="sidebar sticky">
           <div itemscope itemtype="https://schema.org/Person">
@@ -63,8 +62,25 @@
             <div class="sidebar sticky">
                 <div class="Thing">
                     <h4 class="author__bio" itemprop="description">Posts:</h4>
-
+                    
                     {{ navigation wiki/ }}
+                    <script>
+                      var coll = document.getElementsByClassName("collapsible");
+                      var i;
+
+                      for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function () {
+                          this.classList.toggle("active");
+                          var content = this.nextElementSibling;
+                          if (content.style.display === "block") {
+                            content.style.display = "none";
+                          } else {
+                            content.style.display = "block";
+                          }
+                        });
+                      }
+                    </script>
+
                 </div>
         {{end}}
 
