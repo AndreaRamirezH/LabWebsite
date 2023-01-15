@@ -1,7 +1,4 @@
-+++
-title = "How to edit wiki"
-date = "2022-08-1"
-+++
+@def title = "Lab Wiki"
 
 # Lab Wiki
 
