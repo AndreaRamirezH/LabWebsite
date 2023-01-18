@@ -6,18 +6,14 @@ Thomas
 
 - easy way to add MD files without cloning entire repo?
 
-- Layout: folder navigation side bar (topics/tags)
+- Search bar (topics/tags)
     - lab meeting papers, research proposal template and recipes, code, funding, talk on effective presentations ...
-
-- research tab layout: TOC in sidebar.
 
 - intro. text for main page and content for research page
 
 - street map -> works sometimes??
 
 Andrea
-
-- research topics from everyone: ask for graphical abstract and/or key references 
 
 - last modified not working in main page footer
 

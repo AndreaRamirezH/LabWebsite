@@ -26,9 +26,55 @@ function order_directories(path)
     return path
 end
 
+function hfun_wiki_navigation(folder)
+    io = IOBuffer()
+    buttons!(io, folder)
+    return String(take!(io))
+end
+function buttons!(io::IOBuffer, folder)
+    folder = only(folder)
+        # make collapsible for folder
+        # loop over content items
+        #   if item == subfolders
+        #       call buttons(item)
+        #   else item == page
+        #       link to page
+        #   end
+
+        pagecontents = readdir(folder; join=true)[isfile.(readdir(folder; join=true))]
+        filter!(x -> endswith(x, ".md"), pagecontents)
+
+        foldercontents= readdir(folder; join=true)[isdir.(readdir(folder; join=true))]
+
+        displayname = folder
+        print(io, """
+            <button type="button" class="collapsible">$displayname</button>
+            <div class="collapsiblecontent">
+        """)
+
+        for subfolder in foldercontents
+            buttons!(io, ["$subfolder"],)
+        end
+        for page in pagecontents
+            title = something(Franklin.pagevar(page, "markdown_title"), Franklin.pagevar(page, "title"))
+            title === nothing && error("no title found on page $page")
+            title = Franklin.md2html(title; stripp=true)
+            print(io, """
+            <a href=\"$(get_url(page))\">
+                    <span class="post-title">$title</span>
+            <br>
+        """)
+        end
+        print(io, """
+        </div>
+        """)
+
+end
 
 function hfun_navigation(folders)
     pages = String[]
+    folders = String[]
+
     root = Franklin.PATHS[:folder]
 
     for folder in folders
@@ -61,12 +107,14 @@ function hfun_navigation(folders)
 
     # Write out the list
     io = IOBuffer()
-    for k in sort!(collect(keys(items)); rev=true)
+
+
+    for k in sort!(collect(keys(items)); rev=false)
         path_items = items[k]
         # Sort by title
         lt = (x, y) -> x.stitle > y.stitle
         sort!(path_items; lt=lt, rev=true)
-        if length(path_items) <= 1
+        if isdirpath(k)
             item = path_items[1]
             print(io, """
             <button type="button" class="collapsible">

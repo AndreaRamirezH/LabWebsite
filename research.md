@@ -1,19 +1,21 @@
 @def title = "Research"
 @def tags = ["research"]
 
-
 # Computational and engineering principles of neural circuit function
-
-\toc
 
 ## Brain Machine Interfaces (BMIs)
 -
 ~~~
 <div style="text-align: justify">
-Using BMIs, neural signals in the brain can be directly connected to control outputs, bypassing standard neural pathways. We are interested in exploring how BMIs can be used to investigate learning, plasticity, and function in the brain. In collaboration with the Harvey Lab at Harvard Medical School, we are developing a BMI for navigation of virtual environments by mice. 
-In real-time, we decode kinematic variables directly from 2-photon calcium images recorded in the posterior parietal cortex of mice navigating a virtual maze. We can then switch the control of movement through this maze between the physical movements of the mice and their decoded brain signals, creating a closed-loop BMI. We aim to use this interface to investigate phenomena in the brain such as representational drift.
+Using BMIs, neural signals in the brain can be directly connected to control outputs, bypassing standard neural pathways. We are interested in exploring how BMIs can be used to investigate learning, plasticity, and function in the brain. 
+<br>
+
+In collaboration with the Harvey Lab at Harvard Medical School, we are developing a BMI for navigation of virtual environments by mice. 
+In real-time, we decode kinematic variables directly from 2-photon calcium images recorded in the posterior parietal cortex of mice navigating a virtual maze. We can then switch the control of movement through this maze between the physical movements of the mice and their decoded brain signals, creating a closed-loop BMI. 
+<br>
+We aim to use this interface to investigate phenomena in the brain such as representational drift.
 </div>
-~~~
+~~~ \styletext{color:darkgreen;font-size:14px;}{Ethan}
 
 ~~~
 <div class="row">
@@ -24,17 +26,31 @@ In real-time, we decode kinematic variables directly from 2-photon calcium image
 </div>
 ~~~
 
-- Over the last two decades BMIs have enjoyed advances in the quality of neuroimaging data: it's now possible to simultaneously capture the activity of hundreds of individual neurons. Reading out from these neuron populations produces high-bandwidth BMIs that are accurate at interpreting the user's intentions. However, these neuron populations are far from static: the representation of the outside world within these populations -- the patterns of neural activity that coincide with events or correlate closely with external variables -- change over time, often on the order of days. Modern BMIs require daily recalibration to learn these new representations and maintain their accuracy. On the other hand: isolated, individual neurons can be conditioned by repeated success to display highly stable behaviour over the course of weeks. How do we reconcile these phenomena in the context of BMI design? What are the 'rules of the game' governing the evolution of these neuron population dynamics, and how can we take advantage of them to inform stable BMI implementations?  
+- 
+~~~
+<div style="text-align: justify">
+Over the last two decades BMIs have enjoyed advances in the quality of neuroimaging data: it's now possible to simultaneously capture the activity of hundreds of individual neurons. Reading out from these neuron populations produces high-bandwidth BMIs that are accurate at interpreting the user's intentions. 
+<br>
+However, these neuron populations are far from static: the representation of the outside world within these populations -- the patterns of neural activity that coincide with events or correlate closely with external variables -- change over time, often on the order of days. Modern BMIs require daily recalibration to learn these new representations and maintain their accuracy. On the other hand: isolated, individual neurons can be conditioned by repeated success to display highly stable behaviour over the course of weeks. 
+<br>
+How do we reconcile these phenomena in the context of BMI design? What are the 'rules of the game' governing the evolution of these neuron population dynamics, and how can we take advantage of them to inform stable BMI implementations?  
+</div>
+~~~
+\styletext{color:darkgreen;font-size:14px;}{Charlie}
 
 ## Representational drift
 
 Some populations of neurons can change their tuning to behaviour over the course of days, even in the absence of overt learning, and the rate of this drift varies from neuron to neuron. Reliable communication among brain regions must reconcile this volatility to continue to accurately interpret representations as they drift. Can the information contained in interactions between cells predict how much their tuning will change? 
 
 We quantified the informativeness of pairwise interactions in published data from [Driscoll et al.](https://www.sciencedirect.com/science/article/pii/S0092867417308280) and found that tuning stability is more strongly correlated with a neuron’s average redundancy than with its informativeness. This suggests that redundant subpopulations form a ‘backbone’ that is less susceptible to drift, potentially because of the alignment of these neurons’ trial-to-trial variability with the coding direction.
+\styletext{color:darkgreen;font-size:14px;}{Kristine}
 
 ## Distributed online estimation of biophysical neural networks
 
-Devices that interface with the nervous system are improving dramatically, but the complexity and variability of neuronal systems make it difficult to reliably control the activity of living neurons. In my research, I am developing a method for driving the rhythmic patterns generated by a neural circuit towards a target rhythm, providing a proof-of-principle that a living neural system can be reliably controlled. The method exploits novel adaptive filter designs from control theory that I have recently proposed [Burghi et. al. 2022](https://arxiv.org/pdf/2204.01472.pdf) to construct predictive models of neuronal dynamics in real-time. This approach is being tested experimentally in the Stomatogastric Ganglion central pattern generator of the crab, in collaboration with Prof Eve Marder's lab. We are using our engineering approach to exploit the applications of adaptive control for studying neuromodulation in living neural oscillators.
+Devices that interface with the nervous system are improving dramatically, but the complexity and variability of neuronal systems make it difficult to reliably control the activity of living neurons. In my research, I am developing a method for driving the rhythmic patterns generated by a neural circuit towards a target rhythm, providing a proof-of-principle that a living neural system can be reliably controlled. The method exploits novel adaptive filter designs from control theory that I have recently proposed [Burghi et. al. 2022](https://arxiv.org/pdf/2204.01472.pdf) to construct predictive models of neuronal dynamics in real-time. 
+
+This approach is being tested experimentally in the Stomatogastric Ganglion central pattern generator of the crab, in collaboration with Prof Eve Marder's lab. We are using our engineering approach to exploit the applications of adaptive control for studying neuromodulation in living neural oscillators.
+\styletext{color:darkgreen;font-size:14px;}{Thiago}
 
 ## Circuit architecture
 

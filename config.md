@@ -16,6 +16,7 @@ ignore = ["node_modules/"]
 <!--
 Add here global latex commands to use throughout your pages.
 -->
+\newcommand{\styletext}[2]{~~~<span style="#1">#2</span>~~~}
 
 \newcommand{\R}{\mathbb R}
 \newcommand{\card}[5]{
