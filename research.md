@@ -38,6 +38,9 @@ Devices that interface with the nervous system are improving dramatically, but t
 
 ## Circuit architecture
 
+## Understanding the neural basis of behaviour
+My PhD research project is about imaging the neural activity and behaviour of freely moving Drosophila larvae. We designed a new method to track larvae as they navigate a small arena, and simultaneously record their neural activity and behaviour. We then used this new method to show how during particular behaviours, kinematic variables are represented in the neural activity of dopaminergic neurons, which have recently been implicated in motor-related signaling but otherwise signal reward.
+
 ## Spiking networks
 
 ## Homeostatic regulation
