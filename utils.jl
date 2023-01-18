@@ -66,24 +66,31 @@ function hfun_navigation(folders)
         # Sort by title
         lt = (x, y) -> x.stitle > y.stitle
         sort!(path_items; lt=lt, rev=true)
+        if length(path_items) <= 1
+            item = path_items[1]
+            print(io, """
+            <button type="button" class="collapsible">
+                <a href=\"$(item.url)\">
+                        <span class="post-title">$(item.title)</span>
+            </button>
+            """)
+        else 
         print(io, """
                 <div class="posts-group">
                 <div class="post-folder">$(k)</div>
                 <ul class="posts-list">
             """)
-        for item in path_items
-            print(io, """
-                    <li class="post-item">
+            for item in path_items
+                print(io, """
                     <a href=\"$(item.url)\">
-                        <span class="post-title">$(item.title)</span>
-                    </a>
-                    </li>
+                            <span class="post-title">$(item.title)</span>
+                    <br>
                 """)
-        end
+            end
         print(io, """
-            </ul>
             </div>
             """)
+        end
     end
         
 

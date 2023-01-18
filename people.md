@@ -14,13 +14,13 @@ team = [
   (name="Dr. Timothy O'Leary", pic="avatar.jpg", title="Principal Investigator", vitae="", email="tso24@cam.ac.uk"),
   (name="Dr. Thiago Burghi", pic="Thiago.jpg", title="Research Associate", vitae="", email="tbb29@cam.ac.uk"),
   (name="Dr. Michael Rule", pic="avatar.jpg", title="Research Associate", vitae="", email="mer49@cam.ac.uk"),
-  (name="Thomas Burger", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="tsjb2@cam.ac.uk"),
-  (name="Charles Micou", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="cm704@cam.ac.uk"),
+  (name="Thomas Burger", pic="Thomas.jpg", title="Ph.D. Student", vitae="", email="tsjb2@cam.ac.uk"),
+  (name="Charles Micou", pic="Charlie.jpeg", title="Ph.D. Student", vitae="", email="cm704@cam.ac.uk"),
   (name="Adriana Perez-Rotondo", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="ap2013@cam.ac.uk"),
   (name="Andrea Ramirez-Hincapie", pic="Andrea.jpg", title="Ph.D. Student", vitae="", email="air28@cam.ac.uk"),
   (name="Ethan Sorrell", pic="Ethan.jpg", title="Ph.D. Student", vitae="", email="ets30@cam.ac.uk"),
-  (name="Ildiko Stark", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="is425@cam.ac.uk"),
-  (name="Andrey Stoychev", pic="avatar.jpg", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
+  (name="Ildiko Stark", pic="Ildiko.jpg", title="Ph.D. Student", vitae="", email="is425@cam.ac.uk"),
+  (name="Andrey Stoychev", pic="Andy.jpg", title="Ph.D. Student", vitae="", email="avs44@cam.ac.uk"),
   ]
 
 "@@cards @@row" |> println
