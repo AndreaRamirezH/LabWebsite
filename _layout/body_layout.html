@@ -2,6 +2,9 @@
   {{ insert masthead.html }}
   <div class="initial-content">
     <div id="main" role="main">
+      {{ispage people}}
+        {{ toc 2 100}}
+      {{ end }}
 
       {{ispage research}}
         <div class="sidebar sticky">
@@ -22,6 +25,7 @@
             </div>
           </div>
           
+        {{ toc 2 100}}
       {{end}}
 
       {{ispage contact}}
@@ -63,7 +67,7 @@
                 <div class="Thing">
                     <h4 class="author__bio" itemprop="description">Posts:</h4>
                     
-                    {{ navigation wiki/ }}
+                    {{ wiki_navigation wiki/ }}
                     <script>
                       var coll = document.getElementsByClassName("collapsible");
                       var i;
