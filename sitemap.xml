@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>publications/index.html</loc>
-    <lastmod>2023-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>404/index.html</loc>
+    <loc>wiki/Resources/page1/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>research/index.html</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>wiki/lab_wiki/index.html</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>publications/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -38,25 +44,25 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>wiki/Resources/page1/index.html</loc>
-    <lastmod>2023-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>TO_DO/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>wiki/lab_wiki/index.html</loc>
+    <loc>contact/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>contact/index.html</loc>
+    <loc>404/index.html</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>wiki/testfile/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
