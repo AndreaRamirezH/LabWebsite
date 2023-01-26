@@ -18,7 +18,7 @@ function lx_baz(com, _)
 end
 
 function order_directories(path)
-    items = Dict{Int, String}()
+    items = Dict{Int,String}()
 
     path = path[findfirst('/', path):end]
     path = path[1:findlast('/', path)]
@@ -26,48 +26,32 @@ function order_directories(path)
     return path
 end
 
-
-function hfun_navigation(folders)
-    pages = String[]
-    root = Franklin.PATHS[:folder]
-
-    for folder in folders
-        startswith(folder, "/") && (folder = folder[2:end])
-        cd(root) do
-            foreach(((r, _, fs),) ->  append!(pages, joinpath.(r, fs)), walkdir(folder))
-        end # do
-    end
-
-    filter!(x -> endswith(x, ".md"), pages)
-    for i in eachindex(pages)
-        pages[i] = replace(pages[i], r"\.md$"=>"")
-    end
-
-    # Collect required information from the pages
-    items = Dict{String,Any}()
-    for page in pages
-        date = pagevar(page, "date")
-        date === nothing && error("no date found on page $page")
-        date = Date(date)
-        path = String(page)
-        path = order_directories(path)
-        title = something(pagevar(page, "markdown_title"), pagevar(page, "title"))
-        title === nothing && error("no title found on page $page")
-        title = Franklin.md2html(title; stripp=true)
-        stitle = something(pagevar(page, "title"), title) # for sorting (no <code> etc)
-        url = get_url(page)
-        push!(get!(items, String(path), []), (path=path, date=date, title=title, stitle=stitle, url=url))
-    end
-
-    # Write out the list
+function hfun_wiki_navigation(folder)
     io = IOBuffer()
-    for k in sort!(collect(keys(items)); rev=true)
-        path_items = items[k]
-        # Sort by title
-        lt = (x, y) -> x.stitle > y.stitle
-        sort!(path_items; lt=lt, rev=true)
-        if length(path_items) <= 1
-            item = path_items[1]
+    buttons!(io, folder)
+    return String(take!(io))
+end
+function buttons!(io::IOBuffer, folder)
+    folder = only(folder)
+        # make collapsible for folder
+        # loop over content items
+        #   if item == subfolders
+        #       call buttons(item)
+        #   else item == page
+        #       link to page
+        #   end
+
+        pagecontents = readdir(folder; join=true)[isfile.(readdir(folder; join=true))]
+        filter!(x -> endswith(x, ".md"), pagecontents)
+
+        foldercontents= readdir(folder; join=true)[isdir.(readdir(folder; join=true))]
+
+        displayname = folder
+        print(io, """
+            <button type="button" class="collapsible">$displayname</button>
+            <div class="collapsiblecontent">
+        """)
+
             print(io, """
             <button type="button" class="collapsible">
                 <a href=\"$(item.url)\">
@@ -94,9 +78,46 @@ function hfun_navigation(folders)
     end
         
 
-    return String(take!(io))
 end
+function buttons!(io::IOBuffer, folder)
+    folder = only(folder)
+        # make collapsible for folder
+        # loop over content items
+        #   if item == subfolders
+        #       call buttons(item)
+        #   else item == page
+        #       link to page
+        #   end
 
+        pagecontents = readdir(folder; join=true)[isfile.(readdir(folder; join=true))]
+        filter!(x -> endswith(x, ".md"), pagecontents)
+
+        foldercontents= readdir(folder; join=true)[isdir.(readdir(folder; join=true))]
+
+        displayname = folder
+        print(io, """
+            <button type="button" class="collapsible">$displayname</button>
+            <div class="collapsiblecontent">
+        """)
+
+        for subfolder in foldercontents
+            buttons!(io, ["$subfolder"],)
+        end
+        for page in pagecontents
+            title = something(Franklin.pagevar(page, "markdown_title"), Franklin.pagevar(page, "title"))
+            title === nothing && error("no title found on page $page")
+            title = Franklin.md2html(title; stripp=true)
+            print(io, """
+            <a href=\"$(get_url(page))\">
+                    <span class="post-title">$title</span>
+            <br>
+        """)
+        end
+        print(io, """
+        </div>
+        """)
+
+end
 
 function hfun_get_url()
     Franklin.get_url(Franklin.locvar("fd_rpath"))
