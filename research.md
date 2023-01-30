@@ -20,8 +20,9 @@ We aim to use this interface to investigate phenomena in the brain such as repre
 ~~~
 <div class="row">
   <div class="container">
-    <img class="left" src="/assets/minimal-mistakes/probe.png" style="width:50%">
-    <div style="clear: both"></div>      
+    <img class="left" src="/assets/minimal-mistakes/probe.png" style="width:40%">
+    <img class="right" src="/assets/minimal-mistakes/mm-responsive-feature.png" style="width:55%">
+    <div style="clear: both"></div>    
   </div>
 </div>
 ~~~
@@ -52,16 +53,24 @@ Devices that interface with the nervous system are improving dramatically, but t
 This approach is being tested experimentally in the Stomatogastric Ganglion central pattern generator of the crab, in collaboration with Prof Eve Marder's lab. We are using our engineering approach to exploit the applications of adaptive control for studying neuromodulation in living neural oscillators.
 \styletext{color:darkgreen;font-size:14px;}{Thiago}
 
+
+\fig{/_assets/minimal-mistakes/mm-home-page-feature}
+
+
 ## Circuit architecture
+
+Some figures ...
+\fig{/_assets/minimal-mistakes/mm-customizable-feature}
 
 ## Understanding the neural basis of behaviour
 My PhD research project is about imaging the neural activity and behaviour of freely moving Drosophila larvae. We designed a new method to track larvae as they navigate a small arena, and simultaneously record their neural activity and behaviour. We then used this new method to show how during particular behaviours, kinematic variables are represented in the neural activity of dopaminergic neurons, which have recently been implicated in motor-related signaling but otherwise signal reward.
+\styletext{color:darkgreen;font-size:14px;}{Andy}
 
 ## Spiking networks
 
 ## Homeostatic regulation
 
-Cellular and circuit properties vary between individuals even when overall behavior is similar. This is a major problem experimentally and theoretically for understanding how components (e.g. genes, synaptic pathways) affect circuit function. How do nervous systems exhibit coherent function in spite of variable underlying biophysical parameters? What benefits does variability offer? We study these questions using theory and computational models. For example, it's well known that neurons have homeostatic mechanisms that control activity levels. We are using sensitivity analysis on behavioral readouts to analyse how a neuron can robustly nagivate a complex modulatory agenda while maintaining average intracellular calcium concentration, a vital signal for cellular homeostasis. 
+Cellular and circuit properties vary between individuals even when overall behavior is similar. This is a major problem experimentally and theoretically for understanding how components (e.g. genes, synaptic pathways) affect circuit function. How do nervous systems exhibit coherent function in spite of variable underlying biophysical parameters? What benefits does variability offer? These questions can be studied using simple control theory and computational models. For example, it's well known that neurons have homeostatic mechanisms that control activity levels. Using sensitivity analysis on behavioral readouts, we analyse how a neuron can robustly nagivate a complex modulatory agenda while maintaining average intracellular calcium concentration, a vital signal for cellular homeostasis. 
 Future work will investigate how cell-level regulation affects network function and the pathological implications of dysregulation.
 
 
