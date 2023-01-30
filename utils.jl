@@ -31,54 +31,7 @@ function hfun_wiki_navigation(folder)
     buttons!(io, folder)
     return String(take!(io))
 end
-function buttons!(io::IOBuffer, folder)
-    folder = only(folder)
-        # make collapsible for folder
-        # loop over content items
-        #   if item == subfolders
-        #       call buttons(item)
-        #   else item == page
-        #       link to page
-        #   end
 
-        pagecontents = readdir(folder; join=true)[isfile.(readdir(folder; join=true))]
-        filter!(x -> endswith(x, ".md"), pagecontents)
-
-        foldercontents= readdir(folder; join=true)[isdir.(readdir(folder; join=true))]
-
-        displayname = folder
-        print(io, """
-            <button type="button" class="collapsible">$displayname</button>
-            <div class="collapsiblecontent">
-        """)
-
-            print(io, """
-            <button type="button" class="collapsible">
-                <a href=\"$(item.url)\">
-                        <span class="post-title">$(item.title)</span>
-            </button>
-            """)
-        else 
-        print(io, """
-                <div class="posts-group">
-                <div class="post-folder">$(k)</div>
-                <ul class="posts-list">
-            """)
-            for item in path_items
-                print(io, """
-                    <a href=\"$(item.url)\">
-                            <span class="post-title">$(item.title)</span>
-                    <br>
-                """)
-            end
-        print(io, """
-            </div>
-            """)
-        end
-    end
-        
-
-end
 function buttons!(io::IOBuffer, folder)
     folder = only(folder)
         # make collapsible for folder
