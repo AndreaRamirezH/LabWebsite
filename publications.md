@@ -4,10 +4,14 @@ hascode = true
 tags = ["publications"]
 +++
 
+## 2023
+- [Representational drift as a window into neural and behavioural plasticity](https://www.sciencedirect.com/science/article/abs/pii/S0959438823000715) C Micou, T O'Leary. Current Opinion in Neurobiology
+- [Active Dendrites Enable Robust Spiking Computations despite Timing Jitter](https://www.biorxiv.org/content/10.1101/2023.03.22.533815v1.abstract) TSJ Burger, ME Rule, T O'Leary. bioRxiv
 
 ## 2022
 - [Autoregulation of switching behavior by cellular compartment size](https://www.pnas.org/doi/abs/10.1073/pnas.2116054119) M Jozsa, TI Donchev, R Sepulchre, T O’Leary. PNAS
 - [Self-healing codes:How stable neural populations can track continually reconfiguring neural representations](https://www.pnas.org/doi/abs/10.1073/pnas.2106692119) ME Rule, T O’Leary. PNAS
+- [Distributed online estimation of biophysical neural networks](https://ieeexplore.ieee.org/abstract/document/9993018) TB Burghi, T O'Leary, R Sepulchre. IEEE
 
 ## 2021
 - [Brain Machine Interfaces: Closed-Loop Control in an Adaptive System](https://www.annualreviews.org/doi/abs/10.1146/annurev-control-061720-012348) E Sorrell, ME Rule, T O'Leary. Annual Reviews

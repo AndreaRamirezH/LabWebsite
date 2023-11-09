@@ -5,7 +5,7 @@ tags = ["contact"]
 +++
 
 # How to contact us
-We are a part of the Control Group within the Information Engineering Division of the Engineering Department at the University of Cambridge.
+We are a part of the [Control Group](http://www.eng.cam.ac.uk/research/academic-divisions/information-engineering/research-groups/control-group) within the Information Engineering Division of the Engineering Department at the University of Cambridge.
 
 ~~~
 <div class="row">

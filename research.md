@@ -1,7 +1,8 @@
 @def title = "Research"
 @def tags = ["research"]
 
-# Computational and engineering principles of neural circuit function
+# What we do
+Our lab studies computational and engineering principles of neural circuit function.
 
 ## Brain Machine Interfaces (BMIs)
 -
@@ -56,12 +57,14 @@ This approach is being tested experimentally in the Stomatogastric Ganglion cent
 
 ## Understanding the neural basis of behaviour
 My PhD research project is about imaging the neural activity and behaviour of freely moving Drosophila larvae. We designed a new method to track larvae as they navigate a small arena, and simultaneously record their neural activity and behaviour. We then used this new method to show how during particular behaviours, kinematic variables are represented in the neural activity of dopaminergic neurons, which have recently been implicated in motor-related signaling but otherwise signal reward.
+\styletext{color:darkgreen;font-size:14px;}{Andrey}
 
 ## Spiking networks
 
-## Homeostatic regulation
+## Controlling neuromodulation
 
-Cellular and circuit properties vary between individuals even when overall behavior is similar. This is a major problem experimentally and theoretically for understanding how components (e.g. genes, synaptic pathways) affect circuit function. How do nervous systems exhibit coherent function in spite of variable underlying biophysical parameters? What benefits does variability offer? We study these questions using theory and computational models. For example, it's well known that neurons have homeostatic mechanisms that control activity levels. We are using sensitivity analysis on behavioral readouts to analyse how a neuron can robustly nagivate a complex modulatory agenda while maintaining average intracellular calcium concentration, a vital signal for cellular homeostasis. 
+Cellular and circuit properties vary between individuals even when overall behavior is similar. This is a major problem experimentally and theoretically for understanding how components (e.g. genes, neuromodulators) affect circuit function. How do nervous systems exhibit coherent function in spite of variable underlying biophysical parameters? In addition, neurons have homeostatic mechanisms that control activity levels. We are using sensitivity analysis on behavioral readouts to analyse how a neuron can robustly nagivate a complex modulatory agenda while maintaining average intracellular calcium concentration, a vital signal for cellular homeostasis. 
 Future work will investigate how cell-level regulation affects network function and the pathological implications of dysregulation.
+\styletext{color:darkgreen;font-size:14px;}{Andrea}
 
 
