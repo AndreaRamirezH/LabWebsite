@@ -15,11 +15,5 @@ Thomas
 
 Andrea
 
-- last modified not working in main page footer
-
-- more images in research section?
 
 
-# head.html calls
-#  -> body_layout.html, head_katex.html, style
-#     body_layout calls masthead.html

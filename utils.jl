@@ -31,6 +31,7 @@ function hfun_wiki_navigation(folder)
     buttons!(io, folder)
     return String(take!(io))
 end
+
 function buttons!(io::IOBuffer, folder)
     folder = only(folder)
         # make collapsible for folder
