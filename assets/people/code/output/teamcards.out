@@ -8,15 +8,27 @@
 @@
 
 @@column
-  \card{Kristine Heiney}{Kristine.jpg}{Ph.D. Student}{}{kh732@cam.ac.uk}
+  \card{Kristine Heiney}{Kristine.jpg}{Ph.D. Student}{}{}
 @@
 
 @@column
-  \card{Adrianna R Loback}{avatar.jpg}{Research Associate}{}{}
+  \card{Adriana Perez-Rotondo}{avatar.jpg}{Ph.D. Student}{}{}
 @@
 
 @@column
-  \card{Dr. Dhruva Raman}{avatar.jpg}{Research Associate}{}{dvr23@cam.ac.uk}
+  \card{Ethan Sorrell}{Ethan.jpg}{Ph.D. Student}{}{}
+@@
+
+@@column
+  \card{Dr. Adrianna R Loback}{avatar.jpg}{Research Associate}{}{}
+@@
+
+@@column
+  \card{Dr. Dhruva Raman}{avatar.jpg}{Research Associate}{}{}
+@@
+
+@@column
+  \card{Dr. Monika Jozsa}{avatar.jpg}{Research Associate}{}{}
 @@
 
 @@ @@
